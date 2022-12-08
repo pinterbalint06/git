@@ -100,17 +100,19 @@
             </div>
         </div>
         <div class="row negyedik">
-            <div class="col-md-12 col-lg-4 text-break meretezesrow">
-                <div class="meretezes h-100 hatter rounded-5 p-3">
+            <div class="col-md-12 col-lg-4 text-break">
+                <div class="h-auto hatter rounded-5 p-3">
                     <p class="display-6"><span class="fw-bold">Git</span> használatának részletesebb ismertetése:</p>
                     <ul class="list-group list-group-numbered fs-5">
                         <li class="list-group-item"><a href="#jelzestarolas">Hogyan jelezzük és tároljuk fájlainkat?</a>
                         </li>
+                        <li class="list-group-item"><a href="#elozoeskulonbseg">Hogyan tudjuk lekérdezni az előző
+                                verziókat és hogyan tudjuk megtekinteni a különbségeket?</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-12 col-lg-8">
-                <div class="w-100 h-100 hatter rounded-5 p-3 pb-5 fs-4">
+                <div class="w-100 hatter rounded-5 pb-5 p-3 fs-4">
                     <h5 class="display-5 mt-3 text-center" id="jelzestarolas">Hogyan jelezzük és tároljuk fájlainkat?
                     </h5>
                     <div class="mx-auto mt-5 d-flex justify-content-center">
@@ -148,12 +150,25 @@
                             <p>C:\Users\Admin\gitproject&gt;git reset seged\js</p>
                         </div>
                     </div>
+                    <p>A jelezett fájlokat a <span class="fst-italic fw-bold">git commit</span> paranccsal tudjuk
+                        letárolni.<br>A tárolás neve bármi lehet, de célszerű olyan nevet adni, amiből megtudjuk, hogy
+                        miért változtattunk az előző verzión.</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="terminal">
+                            <p>C:\Users\Admin\gitproject&gt;git commit -m "<span class="text-warning">tárolás
+                                    neve</span>"</p>
+                        </div>
+                    </div>
+                    <h5 class="display-5 mt-3 text-center" id="elozoeskulonbseg">Hogyan tudjuk lekérdezni az előző
+                        verziókat és hogyan tudjuk megtekinteni a különbségeket?
+                    </h5>
                 </div>
             </div>
         </div>
     </div>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>

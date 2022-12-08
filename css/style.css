@@ -1,3 +1,6 @@
+/* GIT RÉSZNÉL VALAMI FEL VISZ A MENÜHÖZ */
+/* NAVBAR KÉSZÍTÉSE */
+
 @font-face {
     font-family: roboto;
     src: url("../fonts/Roboto-Medium.ttf");
@@ -27,11 +30,6 @@ body {
     padding: 10px 5px;
     position: relative;
     height: 9vh;
-}
-
-.negyedik .terminal {
-    padding-right: 1vw;
-    height: auto;
 }
 
 .terminal p {
@@ -165,6 +163,11 @@ body {
     border: 4px solid rgb(42, 20, 29);
 }
 
+.negyedik .terminal {
+    padding-right: 1vw;
+    height: auto;
+}
+
 /* relative beállítások */
 /* media max-width */
 
@@ -250,15 +253,6 @@ body {
     .terminal p {
         font-size: 0.8rem;
     }
-
-    .meretezes {
-        width: 75%;
-        margin: auto;
-    }
-
-    .meretezesrow {
-        margin-bottom: 10px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -335,12 +329,6 @@ body {
 
 
 /* media min-width */
-
-@media (min-width: 993px) {
-    .meretezes {
-        width: 100%;
-    }
-}
 
 @media (min-width: 1350px) {
     .kepreszoveg {
