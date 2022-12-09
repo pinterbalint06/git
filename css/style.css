@@ -169,6 +169,10 @@ body {
     height: auto;
 }
 
+.commitsarga {
+    color: rgb(229,	229,	16);
+}
+
 /* relative beállítások */
 /* media max-width */
 

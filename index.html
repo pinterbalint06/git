@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git/GitHub</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -83,7 +84,8 @@
                         feltölteni</li>
                 </ol>
                 <div class="mx-xl-1 mt-auto terminal">
-                    <p>C:\Users\Admin\gitproject&gt;git remote add origin <span class="text-break">https://github.com/felhasznalonev/repositoryneve.git</span></p>
+                    <p>C:\Users\Admin\gitproject&gt;git remote add origin <span
+                            class="text-break">https://github.com/felhasznalonev/repositoryneve.git</span></p>
                     <p>C:\Users\Admin\gitproject&gt;git push origin master</p>
                 </div>
             </div>
@@ -158,15 +160,112 @@
                     <p>A jelezett fájlokat a <span class="fst-italic fw-bold">git commit</span> paranccsal tudjuk
                         letárolni.<br>A tárolás neve bármi lehet, de célszerű olyan nevet adni, amiből megtudjuk, hogy
                         miért változtattunk az előző verzión.</p>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center mb-5">
                         <div class="terminal">
                             <p>C:\Users\Admin\gitproject&gt;git commit -m "<span class="text-warning">tárolás
                                     neve</span>"</p>
                         </div>
                     </div>
-                    <h5 class="display-5 mt-3 text-center" id="elozoeskulonbseg">Hogyan tudjuk lekérdezni az előző
+                    <h5 class="display-5 mt-5 text-center" id="elozoeskulonbseg">Hogyan tudjuk lekérdezni az előző
                         verziókat és hogyan tudjuk megtekinteni a különbségeket?
                     </h5>
+                    <p class="mt-3">Ha megszeretnénk nézni, hogy mely fájljaink vannak jelezve, tárolva vagy még nem
+                        lett velük semmi csinálva, akkor a <span class="fst-italic fw-bold">git status</span> paranccsot
+                        kell használnunk.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <div class="terminal">
+                            <p>C:\Users\Admin\gitproject&gt;git status</p>
+                            <p class="mb-0">Changes to be commited:</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-success mt-0 w-50">&emsp;&emsp;modified: index.html</p>
+                                <p class="text-warning ms-1 w-50">:: Zölddel van kiírva, mert meg lett jelölve, de
+                                    tárolva nem lett</p>
+                            </div>
+                            <p class="mb-0">Changes not staged for commit:</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-danger mt-0 w-50">&emsp;&emsp;modified: style.css</p>
+                                <p class="text-warning ms-1 w-50">:: Pirossal van kiírva, mert módosítva lett a fájl, de
+                                    nem lett se jelezve, se tárolva</p>
+                            </div>
+                            <p class="mb-0">Untracked files:</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-danger mt-0 w-50">&emsp;&emsp;js/javascript.js</p>
+                                <p class="text-warning ms-1 w-50">:: Pirossal van kiírva, mert újonnan lett létrehozva
+                                    és nem lett jelezve és tárolva se</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4">Ha megszeretnénk nézni, az előzőleg létrehozott verziók adatait, akkor a <span
+                            class="fst-italic fw-bold">git log</span> paranccsot
+                        kell használnunk.<br>A parancs a verzió azonosítószámát, azt hogy ki és mikor hozta létre és a
+                        verzió nevét adja meg.<br>Mindig a legújabb verzó van felül.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <div class="terminal">
+                            <p>C:\Users\Admin\gitproject&gt;git log</p>
+                            <div class="d-flex justify-content-between my-0 w-100 text-break">
+                                <p class="my-0 text-break w-75 commitsarga">commit
+                                    <span>a6044b83c0003d9c50fb49cc1b4af1c4ec075bcb</span>
+                                </p>
+                                <p class="text-warning ms-1 w-25">:: A verzió azonosítószáma</p>
+                            </div>
+                            <div class="d-flex justify-content-between my-0 w-100">
+                                <p class="my-0">Author: unknown&emsp;&emsp;&lt;example@example.com&gt;</p>
+                                <p class="text-warning ms-1 w-25">:: Ki hozta létre</p>
+                            </div>
+                            <div class="d-flex justify-content-between my-0 w-100">
+                                <p class="my-0">&emsp;&emsp;Date:&emsp;Thu Dec 8 21:54:43 2022 +0100</p>
+                                <p class="text-warning ms-1 w-25">:: Mikor hozta létre</p>
+                            </div>
+                            <div class="d-flex justify-content-between my-0 w-100">
+                                <p class="my-0">&emsp;&emsp;&emsp;Elso feltoltes</p>
+                                <p class="text-warning ms-1 w-25">:: Verzió neve</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4">Tegyük fel, hogy változtattunk két fájlon (index.html, style.css) a kiinduló állapot
+                        óta.<br>A különbséget a
+                        módosított fájlok és az előzőleg letárolt fájlok között a <span class="fst-italic fw-bold">git
+                            diff</span> paranccsal tudnánk megnézni.</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="terminal">
+                            <p>C:\Users\Admin\gitproject&gt;git diff index.html</p>
+                            <p class="text-warning">&emsp;&emsp;:: Ha mindkét fájl különbséget szeretnénk látni:</p>
+                            <p>C:\Users\Admin\gitproject&gt;git diff HEAD</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <p class="mt-4 text-center">Tegyük fel, hogy a két módosított fájlt jeleztük is.</p>
+                            <div class="d-flex justify-content-center h-75">
+                                <div class="terminal">
+                                    <p>C:\Users\Admin\gitproject&gt;git add index.html</p>
+                                    <p>C:\Users\Admin\gitproject&gt;git add style.css</p>
+                                    <p class="text-warning">&emsp;&emsp;:: Ezen esetben:</p>
+                                    <p>C:\Users\Admin\gitproject&gt;git diff --cached index.html</p>
+                                    <p class="text-warning">&emsp;&emsp;:: Ha mindkét fájl különbséget szeretnénk látni:
+                                    </p>
+                                    <p>C:\Users\Admin\gitproject&gt;git diff --staged</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <p class="mt-4 text-center">Tegyük fel, hogy a két módosított fájlt le is tároltuk.</p>
+                            <div class="d-flex justify-content-center h-75">
+                                <div class="terminal">
+                                    <p>C:\Users\Admin\gitproject&gt;git commit -m "html és css módosítva"</p>
+                                    <p class="text-warning">&emsp;&emsp;:: Ezen esetben:</p>
+                                    <p>C:\Users\Admin\gitproject&gt;git show HEAD</p>
+                                    <p class="text-warning">&emsp;&emsp;:: Vagy ha egy adott verzió és azt megelőző
+                                        verzió különbségét szeretnénk lekérdezni:
+                                    </p>
+                                    <p>C:\Users\Admin\gitproject&gt;git show <span class="text-warning">commit
+                                            azonosítószáma (git log paranccsal kideríthető)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
