@@ -230,7 +230,7 @@ body {
     }
 
     .terminalsize .terminal {
-        height: auto;
+        height: unset;
     }
 }
 
@@ -290,7 +290,7 @@ body {
     }
 
     .terminalsmallsize .terminal {
-        height: auto;
+        height: unset;
     }
 }
 
