@@ -30,13 +30,13 @@
         <div class="row" id="harmadik">
             <div class="gradient col-12">
             </div>
-            <div class="col-12 cim mx-auto mb-5 mt-5">
-                <div class="mx-auto w-75 d-flex justify-content-center align-items-center">
-                    <img src="imgs/background2.jpg" class="img-fluid rounded-circle mx-auto kepszoveggel">
+            <div class="col-12 mb-5 mt-5 d-flex justify-content-center">
+                <div class="cim d-flex justify-content-center">
+                    <img src="imgs/background2.jpg" class="img-fluid rounded-circle kepszoveggel">
                     <h2 class="display-5 mt-3 text-center kepreszoveg">Mi szükséges ahhoz, hogy...</h2>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 borderelso mh-100 d-flex flex-column">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 borderelso mh-100 d-flex flex-column terminalsmallsize">
                 <h5 class="display-5 mt-3 text-center">...használni tudjuk a <span class="fw-bold">git</span>et?</h5>
                 <ol class="list-group list-group-numbered mx-xl-1 fs-5">
                     <li class="list-group-item"><span class="fw-bold">Git</span> letöltése <a
@@ -53,7 +53,7 @@
                     <p>C:\Users\Admin\gitproject&gt;git</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 colborder mh-100 d-flex flex-column">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 colborder mh-100 d-flex flex-column terminalsmallsize">
                 <h5 class="display-5 mt-3 text-center">...projektünk verziókezelt legyen?</h5>
                 <ol class="list-group list-group-numbered mx-xl-1 fs-5">
                     <li class="list-group-item">Megcsinálni mindent a <q class="fst-italic">..használni tudjuk a <span
@@ -67,7 +67,7 @@
                     <p>C:\Users\Admin\gitproject&gt;git init</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 mh-100 colborder d-flex flex-column">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 mh-100 colborder d-flex flex-column terminalsize">
                 <h5 class="display-5 mt-3 text-center">...verzókezelt projektünket fel tudjuk tölteni a <span
                         class="fw-bold">GitHub</span>-ra?</h5>
                 <ol class="list-group list-group-numbered mx-xl-1 fs-5">
@@ -83,8 +83,7 @@
                         feltölteni</li>
                 </ol>
                 <div class="mx-xl-1 mt-auto terminal">
-                    <p>C:\Users\Admin\gitproject&gt;git remote add origin
-                        https://github.com/felhasznalonev/repositoryneve.git</p>
+                    <p>C:\Users\Admin\gitproject&gt;git remote add origin <span class="text-break">https://github.com/felhasznalonev/repositoryneve.git</span></p>
                     <p>C:\Users\Admin\gitproject&gt;git push origin master</p>
                 </div>
             </div>
@@ -92,9 +91,9 @@
         <div class="row negyedik">
             <div class="gradient col-12">
             </div>
-            <div class="col-12 cim mb-5 mt-5">
-                <div class="w-75 mx-auto">
-                    <img src="imgs/background3.jpg" class="img-fluid rounded-circle mx-auto kepszoveggel">
+            <div class="col-12 mb-5 mt-5 d-flex justify-content-center">
+                <div class="cim d-flex justify-content-center">
+                    <img src="imgs/background3.jpg" class="img-fluid rounded-circle  kepszoveggel">
                     <h2 class="display-5 mt-3 text-center kepreszoveggit">Git</h2>
                 </div>
             </div>
@@ -121,20 +120,26 @@
                     <p>Amikor még semmit nem tároltunk (kiinduló állapot), akkor mindent jelezni kell.<br>Később
                         elegendő csak az új vagy módosított fájlok tárolásának jelzése.</p>
                     <div class="d-flex justify-content-center">
-                        <div class="terminal d-inline-flex flex-row">
-                            <div class="me-5">
-                                <p>C:\Users\Admin\gitproject&gt;git add *.*</p>
-                                <p>C:\Users\Admin\gitproject&gt;git add svajc.html</p>
-                                <p>C:\Users\Admin\gitproject&gt;git add *.css</p>
-                                <p>C:\Users\Admin\gitproject&gt;git add ?vajc.*</p>
-                                <p>C:\Users\Admin\gitproject&gt;git add seged\js</p>
+                        <div class="terminal d-inline-flex mw-75 flex-column">
+                            <div class="d-flex w-100 justify-content-between">
+                                <p class="w-50">C:\Users\Admin\gitproject&gt;git add *.*</p>
+                                <p class="text-warning ms-5 w-50">:: összes fájl és almappa jelzése</p>
                             </div>
-                            <div class="text-warning">
-                                <p>:: összes fájl és almappa jelzése</p>
-                                <p>:: svajc.html fájl jelzése</p>
-                                <p>:: minden css kiterjesztésű fájl jelzése</p>
-                                <p>:: minden fájl, ami a 2. betűtől "vajc" jelzése</p>
-                                <p>:: a seged/js almappa és tartlamának jelzése</p>
+                            <div class="d-flex w-100 justify-content-between">
+                                <p class="w-50">C:\Users\Admin\gitproject&gt;git add svajc.html</p>
+                                <p class="text-warning ms-5 w-50">:: svajc.html fájl jelzése</p>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <p class="w-50">C:\Users\Admin\gitproject&gt;git add *.css</p>
+                                <p class="text-warning ms-5 w-50">:: minden css kiterjesztésű fájl jelzése</p>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <p class="w-50">C:\Users\Admin\gitproject&gt;git add ?vajc.*</p>
+                                <p class="text-warning ms-5 w-50">:: minden fájl, ami a 2. betűtől "vajc" jelzése</p>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <p class="w-50">C:\Users\Admin\gitproject&gt;git add seged\js</p>
+                                <p class="text-warning ms-5 w-50">:: a seged/js almappa és tartlamának jelzése</p>
                             </div>
                         </div>
                     </div>
