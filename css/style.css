@@ -1,5 +1,4 @@
-/* GIT RÉSZNÉL VALAMI FEL VISZ A MENÜHÖZ */
-/* NAVBAR KÉSZÍTÉSE */
+/* SCROLLSPYOS NAVBAR KÉSZÍTÉSE */
 
 @font-face {
     font-family: roboto;
@@ -9,7 +8,7 @@
 @font-face {
     font-family: segoe;
     src: url("../fonts/Segoe\ UI.ttf");
-  }
+}
 
 @keyframes cursor-blink {
     0% {
@@ -120,14 +119,15 @@ body {
 }
 
 #harmadik a {
-    color: rgb(230,230,250);
+    color: rgb(230, 230, 250);
 }
 
 #harmadik .kepszoveggel {
     border: 1.5px solid rgb(20, 15, 31);
 }
 
-.colborder, .borderelso {
+.colborder,
+.borderelso {
     padding-bottom: 10px;
 }
 
@@ -170,7 +170,7 @@ body {
 }
 
 .commitsarga {
-    color: rgb(229,	229,	16);
+    color: rgb(229, 229, 16);
 }
 
 /* relative beállítások */
@@ -189,7 +189,7 @@ body {
     .kepszoveggel {
         max-width: 75%;
     }
-    
+
     .terminal p {
         font-size: 0.75rem;
     }
@@ -228,7 +228,7 @@ body {
     .colborder {
         border-bottom: 1px solid rgb(20, 15, 31);
     }
-    
+
     .terminal p {
         font-size: 0.74rem;
     }
@@ -258,7 +258,7 @@ body {
     .kepreszoveggit {
         font-size: 6rem;
     }
-    
+
     .terminal p {
         font-size: 0.73rem;
     }
@@ -378,7 +378,7 @@ body {
     .terminal p {
         font-size: 0.8rem;
     }
-    
+
     .kepreszoveg {
         font-size: 5.3rem;
     }
