@@ -1,5 +1,3 @@
-/* SCROLLSPYOS NAVBAR KÉSZÍTÉSE */
-
 @font-face {
     font-family: roboto;
     src: url("../fonts/Roboto-Medium.ttf");
@@ -16,7 +14,7 @@
     }
 }
 
-/* beállítások */
+/* beallitasok */
 
 #navbar a,
 #navbar li {
@@ -73,7 +71,7 @@ body {
 }
 
 .scrolloffset {
-    scroll-margin-top: 3rem;
+    scroll-margin-top: 6rem;
 }
 
 
@@ -345,10 +343,6 @@ body {
     .paddingtopbody {
         padding-top: 73px;
         transition: padding 0.25s linear;
-    }
-
-    .scrolloffset {
-        scroll-margin-top: 6rem;
     }
 }
 

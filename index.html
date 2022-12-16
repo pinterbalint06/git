@@ -347,6 +347,42 @@
                                 <h3 class="display-3 mt-5 text-center">Hogyan tudunk szobákat kezelni?
                                 </h3>
                             </div>
+                            <p>Alapból a git folyamatok a <q>master</q> szobában zajlanak.<br>Ezt a <span
+                                    class="fst-italic fw-bold">git branch</span> paranccsal ellenőrizhetjük.</p>
+                            <div class="d-flex justify-content-center">
+                                <div class="terminal pb-4">
+                                    <p>C:\Users\Admin\gitproject&gt;git branch</p>
+                                    <p>* <span class="text-success">master</span></p>
+                                </div>
+                            </div>
+                            <p>Az általunk létrehozott szoba örökli a master szoba commit -jait.<br>Itt szabadon
+                                kipróbálhatunk bármit (tárolhatunk belőle verziókat), majd</p>
+                            <p class="ms-5">a szobát törölve a master szobában megmarad az eredeti állapot (mintha
+                                semmit sem csináltunk volna)<br><span class="text-warning">VAGY</span><br>az is
+                                megoldható,
+                                hogy az új szoba commit -jait érvényesítjük a master szobában is</p>
+                            <p>Új szobát a <span class="fst-italic fw-bold">git branch</span> paranccsal tudunk
+                                létrehozni, majd szobákban váltani a <span class="fst-italic fw-bold">git
+                                    checkout</span> paranccsal lehet.</p>
+                            <div class="d-flex justify-content-center">
+                                <div class="terminal pb-4">
+                                    <p>C:\Users\Admin\gitproject&gt;git branch <span
+                                            class="text-warning">szobanév</span></p>
+                                    <p>C:\Users\Admin\gitproject&gt;git checkout <span
+                                            class="text-warning">szobanév</span></p>
+                                    <p>Switched to branch '<span class="text-warning">szobanév</span>'</p>
+                                </div>
+                            </div>
+                            <p>Ha érvényesíteni szeretnénk az új szobában létrehozott verziókat a master szobában is, akkor össze kell "olvasztani" a két szobát:</p>
+                            <div class="d-flex justify-content-center">
+                                <div class="terminal pb-4">
+                                    <p>C:\Users\Admin\gitproject&gt;git branch <span
+                                            class="text-warning">szobanév</span></p>
+                                    <p>C:\Users\Admin\gitproject&gt;git checkout <span
+                                            class="text-warning">szobanév</span></p>
+                                    <p>Switched to branch '<span class="text-warning">szobanév</span>'</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
