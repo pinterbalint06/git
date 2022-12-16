@@ -337,6 +337,11 @@ body {
     .paddingtopmd {
         padding-top: 1rem;
     }
+
+    .paddingtopbody {
+        padding-top: 73px;
+        transition: padding 0.25s linear;
+    }
 }
 
 @media (max-width: 576px) {
@@ -373,6 +378,11 @@ body {
 
     .kepreszoveggit {
         font-size: 3rem;
+    }
+
+    .paddingtopbody {
+        padding-top: 99px;
+        transition: padding 0.25s linear;
     }
 }
 
