@@ -118,6 +118,16 @@ body {
     border: 2px solid rgba(0, 0, 0, 0);
 }
 
+.nav-pills .nav-link#navnegyedikbg {
+    background-color: rgb(62, 96, 90);
+    border: 2px solid rgb(25, 38, 36);
+}
+
+.nav-pills .nav-link.active#navnegyedikbg {
+    background-color: rgb(118, 167, 158);
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
 /*elso div beallitasai*/
 
 .imgbackground {
@@ -197,7 +207,6 @@ body {
 
 #harmadik {
     background-color: rgb(84, 40, 43);
-    padding-bottom: 100px;
 }
 
 #harmadik ul li {
@@ -222,6 +231,24 @@ body {
 
 .commitsarga {
     color: rgb(229, 229, 16);
+}
+
+#harmadik .gradient {
+    margin-top: 0;
+    height: 15vh;
+    background: linear-gradient(180deg, rgb(84, 40, 43) 30%, rgb(62, 96, 90) 100%);
+}
+
+/* negyedik div beallitasai */
+
+
+/* #3e605a negyedik szin hexbe */
+#negyedik {
+    background-color: rgb(62, 96, 90);
+}
+
+#negyedik .kepszoveggel {
+    border: 1.5px solid rgb(25, 38, 36);
 }
 
 /* relative beállítások */

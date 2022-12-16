@@ -373,14 +373,30 @@
                                     <p>Switched to branch '<span class="text-warning">szobanév</span>'</p>
                                 </div>
                             </div>
-                            <p>Ha érvényesíteni szeretnénk az új szobában létrehozott verziókat a master szobában is, akkor össze kell "olvasztani" a két szobát:</p>
+                            <p>Ha érvényesíteni szeretnénk az új szobában létrehozott verziókat a master szobában is,
+                                akkor össze kell "olvasztani" a két szobát:</p>
                             <div class="d-flex justify-content-center">
                                 <div class="terminal pb-4">
-                                    <p>C:\Users\Admin\gitproject&gt;git branch <span
-                                            class="text-warning">szobanév</span></p>
-                                    <p>C:\Users\Admin\gitproject&gt;git checkout <span
-                                            class="text-warning">szobanév</span></p>
-                                    <p>Switched to branch '<span class="text-warning">szobanév</span>'</p>
+                                    <p>C:\Users\Admin\gitproject&gt;git branch master</p>
+                                    <p>C:\Users\Admin\gitproject&gt;git merge <span class="text-warning">szobanév</span>
+                                    </p>
+                                    <p>Updating</p>
+                                    <p>Fast-forward</p>
+                                    <p class="ms-2">css/style.css | 10 <span class="text-success">++</span><span
+                                            class="text-danger">--------</span></p>
+                                    <p class="ms-2">index.html | 36 <span
+                                            class="text-success">++++++++++++++++++++++++++++++++++++</span></p>
+                                    <p class="ms-2">2 files changed, 38 insertions(+), 8 deletions(-)</p>
+                                </div>
+                            </div>
+                            <p>Ha szobát szeretnénk törölni először ki kell lépni abból a szobábol, majd a következő
+                                módon lehet törölni:</p>
+                            <div class="d-flex justify-content-center">
+                                <div class="terminal pb-4">
+                                    <p>C:\Users\Admin\gitproject&gt;git checkout master</p>
+                                    <p>Switched to branch 'master'</p>
+                                    <p>C:\Users\Admin\gitproject&gt;git branch -D <span class="text-warning">szobanév</span></p>
+                                    <p>Deleted branch <span class="text-warning">szobanév</span>.</p>
                                 </div>
                             </div>
                         </div>
