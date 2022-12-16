@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="hu">
 
 <head>
@@ -11,14 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="">
     <nav id="navbar" class="navbar navbar-expand-md fixed-top pt-0">
-        <div class="container-fluid justify-content-center navbackground py-2">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="addPadding()">
+        <div class="container-fluid justify-content-center navbackground py-3">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation" onclick="addPadding()">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-collapse collapse" id="navbarCollapse" style="">
                 <div class="mx-auto d-flex justify-content-center">
                     <ul class="nav nav-pills justify-content-center g-3 paddingtopmd">
                         <li class="nav-item ms-2">
@@ -29,7 +29,7 @@
                                 hogy...</a>
                         </li>
                         <li class="nav-item me-2">
-                            <a class="nav-link rounded-circle" id="navharmadikbg" href="#harmadik">Git</a>
+                            <a class="nav-link rounded-circle active" id="navharmadikbg" href="#harmadik">Git</a>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +37,7 @@
         </div>
     </nav>
     <div data-bs-spy="scroll" data-bs-target="#navbar" class="container-fluid text-white m-0 position-relative gy-0">
-        <div class="row" id="elso">
+        <div class="row scrolloffset" id="elso">
             <div class="imgbackground bg-image mask maskbg d-flex justify-content-center align-items-center">
                 <h1 class="display-1 fw-bold githubcim">GitHub</h1>
             </div>
@@ -54,7 +54,7 @@
             <div class="gradient col-12 mt-auto">
             </div>
         </div>
-        <div class="row" id="masodik">
+        <div class="row scrolloffset" id="masodik">
             <div class="col-12 mb-5 mt-5 d-flex justify-content-center">
                 <div class="cim d-flex justify-content-center">
                     <img src="imgs/background2.jpg" class="img-fluid rounded-circle kepszoveggel">
@@ -115,7 +115,7 @@
             <div class="gradient col-12 mt-lg-auto">
             </div>
         </div>
-        <div class="row" id="harmadik">
+        <div class="row scrolloffset" id="harmadik">
             <div class="col-12">
                 <div class="row">
 
@@ -137,17 +137,23 @@
                                 <li class="list-group-item"><a href="#jelzestarolas">Hogyan jelezzük és tároljuk
                                         fájlainkat?</a>
                                 </li>
-                                <li class="list-group-item"><a href="#elozoeskulonbseg">Hogyan tudjuk lekérdezni az
-                                        előző
-                                        verziókat és hogyan tudjuk megtekinteni a különbségeket?</a></li>
+                                <li class="list-group-item"><a href="#verziolekerdezes">Hogyan tudunk lekérdezni
+                                        verziókat?</a></li>
+                                <li class="list-group-item"><a href="#kulonbseg">Hogyan tudjuk megtekinteni a
+                                        különbségeket a verziók között?</a></li>
+                                <li class="list-group-item"><a href="#torles">Hogyan tudunk verziókat törölni?</a></li>
+                                <li class="list-group-item"><a href="#szobakezeles">Hogyan tudunk szobákat kezelni?</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="w-100 hatter rounded-5 pb-5 p-3 fs-4">
-                            <h5 class="display-5 mt-3 text-center" id="jelzestarolas">Hogyan jelezzük és tároljuk
-                                fájlainkat?
-                            </h5>
+                            <div class="scrolloffset" id="jelzestarolas">
+                                <h3 class="display-3 mt-3 text-center">Hogyan jelezzük és tároljuk
+                                    fájlainkat?
+                                </h3>
+                            </div>
                             <div class="mx-auto mt-5 d-flex justify-content-center">
                                 <p class="fs-3 border-danger border-4 border">Jelzés ≠ Tárolás</p>
                             </div>
@@ -203,10 +209,11 @@
                                             neve</span>"</p>
                                 </div>
                             </div>
-                            <h5 class="display-5 mt-5 text-center" id="elozoeskulonbseg">Hogyan tudjuk lekérdezni az
-                                előző
-                                verziókat és hogyan tudjuk megtekinteni a különbségeket?
-                            </h5>
+                            <div class="scrolloffset" id="verziolekerdezes">
+                                <h3 class="display-3 mt-5 text-center">Hogyan tudunk lekérdezni
+                                    verziókat?
+                                </h3>
+                            </div>
                             <p class="mt-3">Ha megszeretnénk nézni, hogy mely fájljaink vannak jelezve, tárolva vagy még
                                 nem
                                 lett velük semmi csinálva, akkor a <span class="fst-italic fw-bold">git status</span>
@@ -268,6 +275,12 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="scrolloffset" id="kulonbseg">
+                                <h3 class="display-3 mt-5 text-center">Hogyan tudjuk megtekinteni a
+                                    különbségeket a verziók között?
+                                </h3>
+                            </div>
                             <p class="mt-4">Tegyük fel, hogy változtattunk két fájlon (index.html, style.css) a kiinduló
                                 állapot
                                 óta.<br>A különbséget a
@@ -316,6 +329,24 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="scrolloffset" id="torles">
+                                <h3 class="display-3 mt-5 text-center">Hogyan tudunk verziókat törölni?
+                                </h3>
+                            </div>
+                            <p class="text-danger text-uppercase text-center fs-3 mt-3">Minden verzió ami a megadott
+                                verziószám után lett létrehozva törlödni fog!</p>
+                            <div class="d-flex justify-content-center">
+                                <div class="terminal pb-4">
+                                    <p>C:\Users\Admin\gitproject&gt;git reset --hard <span class="text-warning">commit
+                                            azonosítószáma (git log paranccsal kideríthető)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="scrolloffset" id="szobakezeles">
+                                <h3 class="display-3 mt-5 text-center">Hogyan tudunk szobákat kezelni?
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -325,6 +356,8 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/addpadding.js"></script>
+
+
 </body>
 
 </html>

@@ -72,6 +72,10 @@ body {
     transform: translate(-50%, -44%);
 }
 
+.scrolloffset {
+    scroll-margin-top: 3rem;
+}
+
 
 /* navbar beallitasok */
 
@@ -341,6 +345,10 @@ body {
     .paddingtopbody {
         padding-top: 73px;
         transition: padding 0.25s linear;
+    }
+
+    .scrolloffset {
+        scroll-margin-top: 6rem;
     }
 }
 
