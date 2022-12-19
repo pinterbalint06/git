@@ -251,6 +251,34 @@ body {
     border: 1.5px solid rgb(25, 38, 36);
 }
 
+#negyedik a {
+    color: rgb(219, 233, 244);
+}
+
+#negyedik .sajatborder {
+    border: 2px solid rgb(219, 233, 244);
+}
+
+#negyedik ol {
+    list-style-type: decimal;
+}
+
+#negyedik .terminal {
+    height: auto;
+}
+
+#negyedik .sajatborder2 {
+    border: 3px solid rgb(25, 38, 36);
+}
+
+#negyedik .coli {
+    background-color: rgb(40, 62, 58);
+}
+
+#negyedik .colborder {
+    border: 4px solid rgb(25, 38, 36);
+}
+
 /* relative beállítások */
 /* media max-width */
 
@@ -336,6 +364,10 @@ body {
     .cim {
         width: 100%;
     }
+
+    #negyedik .colii {
+        background-color: rgb(40, 62, 58);
+    }
 }
 
 @media (max-width: 768px) {
@@ -395,6 +427,9 @@ body {
     .kepreszoveg {
         font-size: 2.1rem;
     }
+    .scrolloffset {
+        scroll-margin-top: 8rem;
+    }
 }
 
 @media (max-width: 400px) {
@@ -444,6 +479,10 @@ body {
 @media (min-width: 993px) {
     .cim {
         width: 75%;
+    }
+
+    #negyedik .coliii {
+        background-color: rgb(40, 62, 58);
     }
 }
 
