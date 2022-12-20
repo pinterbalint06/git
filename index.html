@@ -430,24 +430,29 @@
                 <div class="w-75 d-inline-flex flex-column sajatborder p-3 rounded-5">
                     <h5 class="display-5 text-center">Mi történik, ha ugyanazon a gépen két személy is dolgozik vagy egy
                         személynek több github fiókja is van?</h5>
-                    <p class="fs-6 pt-5">Mivel a git azon github tárhelyhez "kötődik", amelyre először feltöltöt valaki, így
-                        el kell vel felejtetni és újra kell kéretni feltöltésnél (push), hogy lépjen be az illető a github
+                    <p class="fs-6 pt-5">Mivel a git azon github tárhelyhez "kötődik", amelyre először feltöltöt valaki,
+                        így
+                        el kell vel felejtetni és újra kell kéretni feltöltésnél (push), hogy lépjen be az illető a
+                        github
                         tárhelyére.</p>
                     <div class="d-flex justify-content-center">
                         <div class="terminal d-inline-flex mw-75 flex-column">
                             <ol>
                                 <li>
-                                    <p>Verzérlőpult -&gt; Hitelesítőadat-kezelő -&gt; Windows rendszerbeli hitelesítő adatok
+                                    <p>Verzérlőpult -&gt; Hitelesítőadat-kezelő -&gt; Windows rendszerbeli hitelesítő
+                                        adatok
                                         -&gt; git bejegyzés kiválasztása -&gt; Eltávolítás</p>
                                 </li>
                                 <li>
                                     <p>C:\Users\Admin\gitproject&gt;rundll32.exe keymgr.dll, KRShowKeyMgr</p>
-                                    <p class="ms-2">Megjelenő ablakban <span class="fw-bold">git</span> kiválasztása majd
+                                    <p class="ms-2">Megjelenő ablakban <span class="fw-bold">git</span> kiválasztása
+                                        majd
                                         Eltávolítás</p>
                                 </li>
                                 <li>
                                     <p>C:\Users\Admin\gitproject&gt;cmdkey /list</p>
-                                    <p class="ms-2">Meg kell keresni a <span class="fw-bold">git</span>-es bejegyzést majd
+                                    <p class="ms-2">Meg kell keresni a <span class="fw-bold">git</span>-es bejegyzést
+                                        majd
                                         annak Target: utáni részét ki kell másolni.</p>
                                     <p>C:\Users\Admin\gitproject&gt;cmdkey /delete:<span class="text-warning">kimásolt
                                             rész</span></p>
@@ -460,31 +465,89 @@
             <div class="col-12">
                 <div class="row gx-2">
                     <div class="col-12">
-                        <h3 class="display-3 text-center">Mit lehet még tenni, ha belép valaki a github oldalán a tárjelyére?
+                        <h3 class="display-3 text-center">Mit lehet még tenni, ha belép valaki a github oldalán a
+                            tárjelyére?
                         </h3>
                     </div>
-                    <div class="p-2 col-md-12 col-lg-6 coli colborder d-flex flex-column justify-content-center rounded-5">
-                        <p class="text-center fs-3">Megtekintheti a létrehozott repository mappáit, illetve valamelyiket kiválasztva láthatja annak tartalmát.</p>
-                        <div class="d-inline-flex flex-column justify-content-center m-md-5">
-                            <img class="img-fluid sajatborder2" src="imgs/repok.png" alt="repositorik">
-                            <img class="img-fluid sajatborder2" src="imgs/repo.png" alt="repőository">
-                        </div>
+                    <div
+                        class="p-2 col-md-12 col-lg-6 coli colborder d-flex flex-column justify-content-center rounded-5">
+                        <p class="text-center fs-3">Megtekintheti a létrehozott repository mappáit, illetve valamelyiket
+                            kiválasztva láthatja annak tartalmát.</p>
+                        <img class="sajatborder2 h35 w-auto mx-lg-5" src="imgs/repok.png" alt="repositorik">
+                        <img class="sajatborder2 h35 w-auto mx-lg-5" src="imgs/repo.png" alt="repository">
                     </div>
                     <div class="p-2 col-md-12 col-lg-6 colborder d-flex flex-column justify-content-center rounded-5">
-                        <p class="text-center fs-3">Valamelyik file nevére kattintva megnézheti annak kódját illetve azok egyes verzióit.</p>
-                        <img class="img-fluid sajatborder2" src="imgs/fajlmegtekint.png" alt="fajlmegtekintese">
+                        <p class="text-center fs-3">Valamelyik file nevére kattintva megnézheti annak kódját illetve
+                            azok egyes verzióit.</p>
+                        <img class="img-fluid sajatborder2 mx-lg-5" src="imgs/fajlmegtekint.png" alt="fajlmegtekintese">
                     </div>
-                    <div class="p-2 col-md-12 col-lg-6 colii colborder d-flex flex-column justify-content-center rounded-5">
-                        <img class="img-fluid sajatborder2" src="imgs/fajlhistory.png" alt="fajlhistory">
+                    <div
+                        class="p-2 col-md-12 col-lg-6 colii colborder d-flex flex-column justify-content-center rounded-5">
+                        <img class="img-fluid sajatborder2 mx-lg-5" src="imgs/fajlhistory.png" alt="fajlhistory">
                         <ol class="text-danger fs-3">
-                            <li>Változások az előző verziókhoz képest Split gombbal egymás mellé helyezhető a 2 verzió</li>
+                            <li>Változások az előző verziókhoz képest Split gombbal egymás mellé helyezhető a 2 verzió
+                            </li>
                             <li>Az adott commit-hoz tartozó fájl tartalom</li>
                             <li>Az adott commithoz tartozó fájlok listája</li>
                         </ol>
                     </div>
-                    <div class="p-2 col-md-12 col-lg-6 coliii colborder d-flex flex-column justify-content-center rounded-5">
+                    <div
+                        class="p-2 col-md-12 col-lg-6 coliii colborder d-flex flex-column justify-content-center rounded-5">
                         <p class="text-center fs-3">Szerkeszthet iletve törölhet fájlokat.</p>
-                        <img class="img-fluid sajatborder2" src="imgs/szerkesztestorol.png" alt="szerkestestorol">
+                        <img class="img-fluid sajatborder2 mx-lg-5" src="imgs/szerkesztestorol.png"
+                            alt="szerkestestorol">
+                    </div>
+                    <div
+                        class="p-2 col-md-12 col-lg-6 coli colborder d-flex flex-column justify-content-center rounded-5">
+                        <p class="text-center fs-3">Hozzáadhat új fájlokat helyben szerkesztéssel vagy betallózva.</p>
+                        <img class="img-fluid sajatborder2 mx-lg-5" src="imgs/ujfajlok.png" alt="ujfajlhozzaadasa">
+                    </div>
+                    <div class="p-2 col-md-12 col-lg-6 colborder d-flex flex-column justify-content-center rounded-5">
+                        <p class="text-center fs-3">Törölheti távoli repository mappáját.</p>
+                        <img class="img-fluid sajatborder2 mx-lg-5" src="imgs/repositorysettings.png"
+                            alt="repositorysettings">
+                        <p class="text-center fs-3">Legalul:</p>
+                        <img class="img-fluid sajatborder2 mx-lg-5" src="imgs/torlesgomb.png" alt="torlesgomb">
+                    </div>
+                    <div class="p5md mt-lg-5 col-12 d-flex justify-content-center colimd colbordermd rounded-5">
+                        <div
+                            class="p-lg-5 d-flex d-lg-inline-flex wlgauto colilg colborderlg flex-column justify-content-center rounded-5">
+                            <h3 class="display-3 text-center">Weboldal létrehozása</h3>
+                            <div class="row imgrow d-inline-flex w-auto">
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">1.</p>
+                                    <img class="img-fluid sajatborder2 d-block" src="imgs/repositorysettings.png"
+                                        alt="repositorysettings">
+                                </div>
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">2.</p>
+                                    <img class="img-fluid sajatborder2 d-block" src="imgs/beallitasokoldal.png"
+                                        alt="beallitasokoldal">
+                                </div>
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">3.</p>
+                                    <img class="img-fluid sajatborder2 d-block" src="imgs/branchatallitasa.png"
+                                        alt="branchatallitasa">
+                                </div>
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">4.</p>
+                                    <div class="d-inline-flex flex-column">
+                                        <p>A weboldalad elérhető ezen a címen:</p>
+                                        <p class="ms-5 fs-3">https://<span class="text-warning">github felhasználó
+                                                név</span>.github.io/<span class="text-warning">repository
+                                                neve</span>/<span class="text-warning">fájl neve</span></p>
+                                        <p>Ha a fájlunk neve index.html nem kell külön megadni fájl nevet:</p>
+                                        <p class="ms-5 fs-3">https://<span class="text-warning">github felhasználó
+                                                név</span>.github.io/<span class="text-warning">repository neve</span>/
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: "roboto";
+    font-family: "roboto"!important;
 }
 
 .terminal {
@@ -72,6 +72,10 @@ body {
 
 .scrolloffset {
     scroll-margin-top: 6rem;
+}
+
+.h35 {
+    height: 35%;
 }
 
 
@@ -193,7 +197,7 @@ body {
     border: 1.5px solid rgb(20, 15, 31);
 }
 
-.colborder,
+#masodik .colborder,
 .borderelso {
     padding-bottom: 10px;
 }
@@ -279,6 +283,10 @@ body {
     border: 4px solid rgb(25, 38, 36);
 }
 
+#negyedik .imgrow {
+    font-size: 1.5rem;
+}
+
 /* relative beállítások */
 /* media max-width */
 
@@ -327,7 +335,7 @@ body {
         border-bottom: 1px solid rgb(20, 15, 31);
     }
 
-    .colborder {
+    #masodik .colborder {
         border-bottom: 1px solid rgb(20, 15, 31);
     }
 
@@ -367,6 +375,18 @@ body {
 
     #negyedik .colii {
         background-color: rgb(40, 62, 58);
+    }
+
+    #negyedik .colimd {
+        background-color: rgb(40, 62, 58);
+    }
+
+    #negyedik .colbordermd {
+        border: 4px solid rgb(25, 38, 36);
+    }
+
+    #negyedik .p5md {
+        padding: 3rem;
     }
 }
 
@@ -427,6 +447,7 @@ body {
     .kepreszoveg {
         font-size: 2.1rem;
     }
+
     .scrolloffset {
         scroll-margin-top: 8rem;
     }
@@ -484,11 +505,23 @@ body {
     #negyedik .coliii {
         background-color: rgb(40, 62, 58);
     }
+
+    #negyedik .wlgauto {
+        width: auto;
+    }
+
+    #negyedik .colilg {
+        background-color: rgb(40, 62, 58);
+    }
+
+    #negyedik .colborderlg {
+        border: 4px solid rgb(25, 38, 36);
+    }
 }
 
 
 @media (min-width: 1200px) {
-    .colborder {
+    #masodik .colborder {
         border-right: 1px solid rgb(20, 15, 31);
     }
 }
