@@ -160,7 +160,8 @@
                             <div class="mx-auto mt-5 d-flex justify-content-center">
                                 <p class="fs-3 border-danger border-4 border">Jelzés ≠ Tárolás</p>
                             </div>
-                            <p>Amikor még semmit nem tároltunk (kiinduló állapot), akkor mindent jelezni kell.<br>Később
+                            <p class="ms-3">Amikor még semmit nem tároltunk (kiinduló állapot), akkor mindent jelezni
+                                kell.<br>Később
                                 elegendő csak az új vagy módosított fájlok tárolásának jelzése.</p>
                             <div class="d-flex justify-content-center">
                                 <div class="terminal d-inline-flex mw-75 flex-column">
@@ -188,7 +189,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="mt-3">Ha esetleg eltrontottunk valamit vagy meggondoltuk magunkat a <span
+                            <p class="mt-3 ms-3">Ha esetleg eltrontottunk valamit vagy meggondoltuk magunkat a <span
                                     class="fst-italic fw-bold">git reset</span> paranccsal tudjuk visszavonni a
                                 jelzéseinket.
                             </p>
@@ -201,7 +202,8 @@
                                     <p>C:\Users\Admin\gitproject&gt;git reset seged\js</p>
                                 </div>
                             </div>
-                            <p>A jelezett fájlokat a <span class="fst-italic fw-bold">git commit</span> paranccsal
+                            <p class="ms-3">A jelezett fájlokat a <span class="fst-italic fw-bold">git commit</span>
+                                paranccsal
                                 tudjuk
                                 letárolni.<br>A tárolás neve bármi lehet, de célszerű olyan nevet adni, amiből
                                 megtudjuk, hogy
@@ -217,7 +219,8 @@
                                     verziókat?
                                 </h3>
                             </div>
-                            <p class="mt-3">Ha megszeretnénk nézni, hogy mely fájljaink vannak jelezve, tárolva vagy még
+                            <p class="mt-3 ms-3">Ha megszeretnénk nézni, hogy mely fájljaink vannak jelezve, tárolva
+                                vagy még
                                 nem
                                 lett velük semmi csinálva, akkor a <span class="fst-italic fw-bold">git status</span>
                                 paranccsot
@@ -249,7 +252,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="mt-4">Ha megszeretnénk nézni, az előzőleg létrehozott verziók adatait, akkor a
+                            <p class="mt-4 ms-3">Ha megszeretnénk nézni, az előzőleg létrehozott verziók adatait, akkor
+                                a
                                 <span class="fst-italic fw-bold">git log</span> paranccsot
                                 kell használnunk.<br>A parancs a verzió azonosítószámát, azt hogy ki és mikor hozta
                                 létre és a
@@ -284,7 +288,8 @@
                                     különbségeket a verziók között?
                                 </h3>
                             </div>
-                            <p class="mt-4">Tegyük fel, hogy változtattunk két fájlon (index.html, style.css) a kiinduló
+                            <p class="mt-4 ms-3">Tegyük fel, hogy változtattunk két fájlon (index.html, style.css) a
+                                kiinduló
                                 állapot
                                 óta.<br>A különbséget a
                                 módosított fájlok és az előzőleg letárolt fájlok között a <span
@@ -337,7 +342,8 @@
                                 <h3 class="display-3 mt-5 text-center">Hogyan tudunk verziókat törölni?
                                 </h3>
                             </div>
-                            <p class="text-danger text-uppercase text-center fs-3 mt-3">Minden verzió ami a megadott
+                            <p class="text-danger text-uppercase text-center fs-3 mt-3 ms-3">Minden verzió ami a
+                                megadott
                                 verziószám után lett létrehozva törlödni fog!</p>
                             <div class="d-flex justify-content-center">
                                 <div class="terminal pb-4">
@@ -350,7 +356,7 @@
                                 <h3 class="display-3 mt-5 text-center">Hogyan tudunk szobákat kezelni?
                                 </h3>
                             </div>
-                            <p>Alapból a git folyamatok a <q>master</q> szobában zajlanak.<br>Ezt a <span
+                            <p class="ms-3">Alapból a git folyamatok a <q>master</q> szobában zajlanak.<br>Ezt a <span
                                     class="fst-italic fw-bold">git branch</span> paranccsal ellenőrizhetjük.</p>
                             <div class="d-flex justify-content-center">
                                 <div class="terminal pb-4">
@@ -358,13 +364,15 @@
                                     <p>* <span class="text-success">master</span></p>
                                 </div>
                             </div>
-                            <p>Az általunk létrehozott szoba örökli a master szoba commit -jait.<br>Itt szabadon
+                            <p class="ms-3">Az általunk létrehozott szoba örökli a master szoba commit -jait.<br>Itt
+                                szabadon
                                 kipróbálhatunk bármit (tárolhatunk belőle verziókat), majd</p>
                             <p class="ms-5">a szobát törölve a master szobában megmarad az eredeti állapot (mintha
                                 semmit sem csináltunk volna)<br><span class="text-warning">VAGY</span><br>az is
                                 megoldható,
                                 hogy az új szoba commit -jait érvényesítjük a master szobában is</p>
-                            <p>Új szobát a <span class="fst-italic fw-bold">git branch</span> paranccsal tudunk
+                            <p class="ms-3">Új szobát a <span class="fst-italic fw-bold">git branch</span> paranccsal
+                                tudunk
                                 létrehozni, majd szobákban váltani a <span class="fst-italic fw-bold">git
                                     checkout</span> paranccsal lehet.</p>
                             <div class="d-flex justify-content-center">
@@ -376,7 +384,8 @@
                                     <p>Switched to branch '<span class="text-warning">szobanév</span>'</p>
                                 </div>
                             </div>
-                            <p>Ha érvényesíteni szeretnénk az új szobában létrehozott verziókat a master szobában is,
+                            <p class="ms-3">Ha érvényesíteni szeretnénk az új szobában létrehozott verziókat a master
+                                szobában is,
                                 akkor össze kell "olvasztani" a két szobát:</p>
                             <div class="d-flex justify-content-center">
                                 <div class="terminal pb-4">
@@ -392,7 +401,8 @@
                                     <p class="ms-2">2 files changed, 38 insertions(+), 8 deletions(-)</p>
                                 </div>
                             </div>
-                            <p>Ha szobát szeretnénk törölni először ki kell lépni abból a szobábol, majd a következő
+                            <p class="ms-3">Ha szobát szeretnénk törölni először ki kell lépni abból a szobábol, majd a
+                                következő
                                 módon lehet törölni:</p>
                             <div class="d-flex justify-content-center">
                                 <div class="terminal pb-4">
@@ -427,7 +437,7 @@
                             class="fw-bold">GitHub</span>-ra?</a></h5>
             </div>
             <div class="col-12 d-flex justify-content-center">
-                <div class="w-75 d-inline-flex flex-column sajatborder p-3 rounded-5">
+                <div class="w-75 d-inline-flex flex-column coli colborder p-3 rounded-5 mb-5">
                     <h5 class="display-5 text-center">Mi történik, ha ugyanazon a gépen két személy is dolgozik vagy egy
                         személynek több github fiókja is van?</h5>
                     <p class="fs-6 pt-5">Mivel a git azon github tárhelyhez "kötődik", amelyre először feltöltöt valaki,
@@ -462,19 +472,35 @@
                     </div>
                 </div>
             </div>
+            <div class="col-12 d-flex text-break justify-content-center">
+                <div class="h-auto d-inline-flex flex-column coli colborder rounded-5 p-3 text-center">
+                    <ul class="list-group list-group-numbered fs-5">
+                        <li class="list-group-item"><a href="#sajatgithub">Mit lehet tenni, ha belép valaki a github
+                                oldalán a
+                                tárhelyére?</a>
+                        </li>
+                        <li class="list-group-item"><a href="#masgithub">Mit lehet tenni, ha belép valaki másnak
+                                a
+                                tárhelyére a github oldalán?</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="col-12">
                 <div class="row gx-2">
-                    <div class="col-12">
-                        <h3 class="display-3 text-center">Mit lehet még tenni, ha belép valaki a github oldalán a
-                            tárjelyére?
+                    <div class="col-12 scrolloffset">
+                        <h3 class="display-3 text-center" id="sajatgithub">Mit lehet tenni, ha belép valaki a github
+                            oldalán a
+                            tárhelyére?
                         </h3>
                     </div>
                     <div
                         class="p-2 col-md-12 col-lg-6 coli colborder d-flex flex-column justify-content-center rounded-5">
                         <p class="text-center fs-3">Megtekintheti a létrehozott repository mappáit, illetve valamelyiket
                             kiválasztva láthatja annak tartalmát.</p>
-                        <img class="sajatborder2 h35 w-auto mx-lg-5" src="imgs/repok.png" alt="repositorik">
-                        <img class="sajatborder2 h35 w-auto mx-lg-5" src="imgs/repo.png" alt="repository">
+                        <div>
+                            <img class="sajatborder2 w-50 float-start" src="imgs/repok.png" alt="repositorik">
+                            <img class="sajatborder2 w-50 float-end" src="imgs/repo.png" alt="repository">
+                        </div>
                     </div>
                     <div class="p-2 col-md-12 col-lg-6 colborder d-flex flex-column justify-content-center rounded-5">
                         <p class="text-center fs-3">Valamelyik file nevére kattintva megnézheti annak kódját illetve
@@ -517,19 +543,19 @@
                                 <div
                                     class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
                                     <p class="me-3">1.</p>
-                                    <img class="img-fluid sajatborder2 d-block" src="imgs/repositorysettings.png"
+                                    <img class="img-fluid sajatborder2" src="imgs/repositorysettings.png"
                                         alt="repositorysettings">
                                 </div>
                                 <div
                                     class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
                                     <p class="me-3">2.</p>
-                                    <img class="img-fluid sajatborder2 d-block" src="imgs/beallitasokoldal.png"
+                                    <img class="img-fluid sajatborder2" src="imgs/beallitasokoldal.png"
                                         alt="beallitasokoldal">
                                 </div>
                                 <div
                                     class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
                                     <p class="me-3">3.</p>
-                                    <img class="img-fluid sajatborder2 d-block" src="imgs/branchatallitasa.png"
+                                    <img class="img-fluid sajatborder2" src="imgs/branchatallitasa.png"
                                         alt="branchatallitasa">
                                 </div>
                                 <div
@@ -551,13 +577,129 @@
                     </div>
                 </div>
             </div>
+            <div class="col-12">
+                <div class="row gx-2 fixterminalmeret">
+                    <div class="col-12 scrolloffset">
+                        <h3 class="display-3 text-center mt-5" id="masgithub">Mit lehet tenni, ha belép valaki másnak
+                            a
+                            tárhelyére a github oldalán?
+                        </h3>
+                    </div>
+                    <div
+                        class="p-2 col-md-12 col-lg-4 coli colborder d-flex flex-column justify-content-center rounded-5">
+                        <p class="text-center fs-2">Letölthetjük zip-ben a repository tartalmát, de ez nem fogja
+                            tartalmazni a verziókat, csak a legutolsó állapot lesz benne.</p>
+                        <img class="sajatborder2 h35 w-auto mx-lg-5" src="imgs/zipletoltese.png" alt="zipbenletoltes">
+                    </div>
+                    <div class="p-2 col-md-12 col-lg-4 colborder d-flex flex-column justify-content-center rounded-5">
+                        <p class="text-center fs-2 mt-5">Ha a verziókat is le akarjuk tölteni és nem csak a legutóbbi
+                            verziót:</p>
+                        <div class="terminal mt-auto">
+                            <p>C:\Users\Admin&gt;git clone <span class="text-break">https://github.com/<span
+                                        class="text-warning">felhasznalonev</span>/<span
+                                        class="text-warning">repositoryneve</span>.git</span></p>
+                            <p>Így az Admin mappábe létre jön egy <span class="text-warning">repository név</span> nevű
+                                mappa a repository tartalmával és verzióival.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="p-2 col-md-12 col-lg-4 coli colborder d-flex flex-column justify-content-center rounded-5">
+                        <p class="text-center fs-2 mt-5">Ha már leklónoztuk a repository-t és szeretnénk az új verzióhoz
+                            hozzájutni:</p>
+                        <div class="terminal mt-auto">
+                            <p>C:\Users\Admin&gt;git pull origin master</p>
+                            <p>Ezzel lekértük a legujabb verziót.</p>
+                        </div>
+                    </div>
+                    <div class="p5md mt-lg-5 col-12 d-flex justify-content-center colimd colbordermd rounded-5">
+                        <div
+                            class="p-lg-5 d-flex d-lg-inline-flex wlgauto colilg colborderlg flex-column justify-content-center rounded-5">
+                            <h3 class="display-3 text-center">Hogy érhető el, hogy egy idegen github tárhely adott
+                                repository mappájába legyen jogunk feltölteni (push)?</h3>
+                            <div class="ms-5">
+                                <p class="text-start fs-3">Például:</p>
+                                <p class="text-start fs-3">idegen github tárhely: trefort9c </p>
+                                <p class="text-start fs-3">idegen távoli repository neve: orszag</p>
+                                <p class="text-start fs-3 ms-5">saját github tárhely: nzs78 </p>
+                                <p class="text-start fs-3 ms-5">saját e-mail: nzsbp42@gmail.com</p>
+                            </div>
+                            <div class="row imgrow d-inline-flex w-auto mt-5">
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">1.</p>
+                                    <div class="d-flex flex-column">
+                                        <p class="fs-3">A trefort9c (idegen) felhasználó lépjen be a github tárhelyére,
+                                            majd:</p>
+                                        <img class="img-fluid sajatborder2" src="imgs/beallitasokprofilrol.png"
+                                            alt="beallitasokprofilrol">
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">2.</p>
+                                    <img class="img-fluid sajatborder2" src="imgs/beallitasokrepositories.png"
+                                        alt="beallitasokoldal">
+                                </div>
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">3.</p>
+                                    <img class="img-fluid sajatborder2" src="imgs/repositoriescollaborators.png"
+                                        alt="repositoriescollaborators">
+                                </div>
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">4.</p>
+                                    <img class="img-fluid sajatborder2" src="imgs/invitecollaborator.png"
+                                        alt="invitecollaborator">
+                                </div>
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">5.</p>
+                                    <img class="img-fluid sajatborder2" src="imgs/setcollaboratorname.png"
+                                        alt="setcollaboratorname">
+                                </div>
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">6.</p>
+                                    <div class="d-flex flex-column">
+                                        <p class="fs-3">Ezek után a meghívott github (jelen esetben nzs78) fog kapni egy
+                                            emailt arra az emailjére amellyel regisztrált a githubra.</p>
+                                        <p class="fs-3">Az emailben ide kell kattintania:</p>
+                                        <img class="img-fluid sajatborder2" src="imgs/acceptinvite.png"
+                                            alt="acceptinvite">
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">7.</p>
+                                    <div class="d-flex flex-column">
+                                        <p class="fs-3">Utána a meghívottnak (nzs78) be kell lépni saját github
+                                            tárhelyére.</p>
+                                        <p class="fs-3">Itt pedig ide kell kattintania:</p>
+                                        <img class="img-fluid sajatborder2" src="imgs/acceptinvitegithuboldalon.png"
+                                            alt="acceptinvitegithuboldalon">
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-12 col-lg-6 d-flex flex-row align-items-center justify-content-center">
+                                    <p class="me-3">8.</p>
+                                    <div class="terminal h-auto">
+                                        <p class="fs-3 mb-5">Amikor egy github repositoryt többen is használnak fontos,
+                                            hogy mielőtt feltöltenének, előtte le kell tölteni.</p>
+                                        <p class="fs-4">C:\Users\Admin\orszag&gt;git pull origin master</p>
+                                        <p class="fs-4">C:\Users\Admin\orszag&gt;git push origin master</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/addpadding.js"></script>
-
-
 </body>
 
 </html>

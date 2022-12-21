@@ -74,9 +74,6 @@ body {
     scroll-margin-top: 6rem;
 }
 
-.h35 {
-    height: 35%;
-}
 
 
 /* navbar beallitasok */
@@ -285,6 +282,12 @@ body {
 
 #negyedik .imgrow {
     font-size: 1.5rem;
+}
+
+#negyedik ul li {
+    background-color: rgb(40, 62, 58);
+    color: white;
+    border: none;
 }
 
 /* relative beállítások */
@@ -517,6 +520,10 @@ body {
     #negyedik .colborderlg {
         border: 4px solid rgb(25, 38, 36);
     }
+
+    #negyedik .fixterminalmeret .terminal {
+        height: 10vh;
+    }
 }
 
 
@@ -541,5 +548,9 @@ body {
 
     .kepszoveggel {
         max-width: 75%;
+    }
+
+    #negyedik .fixterminalmeret .terminal {
+        height: 9vh;
     }
 }
